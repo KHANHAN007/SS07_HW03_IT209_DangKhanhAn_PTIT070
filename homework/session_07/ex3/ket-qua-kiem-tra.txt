@@ -1,0 +1,22 @@
+===== SYSTEMD STATUS =====
+● spring-app.service - Spring Boot Application
+     Loaded: loaded (/etc/systemd/system/spring-app.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2026-10-08 21:02:40 +07; 2s ago
+   Main PID: 160819 (java)
+      Tasks: 14 (limit: 2237)
+     Memory: 53.3M
+        CPU: 2.646s
+     CGroup: /system.slice/spring-app.service
+             └─160819 /usr/bin/java -jar /opt/spring-app/app.jar
+
+Oct 08 21:02:40 anlinh.99 systemd[1]: spring-app.service: Scheduled restart job, restart counter is at 33.
+Oct 08 21:02:40 anlinh.99 systemd[1]: Stopped Spring Boot Application.
+Oct 08 21:02:40 anlinh.99 systemd[1]: spring-app.service: Consumed 11.704s CPU time.
+Oct 08 21:02:40 anlinh.99 systemd[1]: Started Spring Boot Application.
+
+===== PORT 8082 =====
+LISTEN 0      100    [::ffff:127.0.0.1]:8082             *:*    users:(("java",pid=138345,fd=9))                             
+
+===== JAVA PROCESS USER =====
+USER         PID    PPID CMD
+spring-+  160819       1 /usr/bin/java -jar /opt/spring-app/app.jar
